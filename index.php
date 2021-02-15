@@ -121,16 +121,16 @@ $listaCani = [$bolognese, $bracco_italiano, $corso, $pastore_bergamasco, $pastor
                 <h4>Altezza media: <?php echo $cane->getAltezzaMedia(); ?> cm</h4>
               </li>
               <li>
-                <h4>Pelo: <?php echo $cane->getPesoMedio(); ?> kg</h4>
+                <h4>Pelo: <?php echo $cane->getPelo(); ?></h4>
               </li>
               <li>
-                <h4>Colore: <?php echo $cane->getColore(); ?> kg</h4>
+                <h4>Colore: <?php echo $cane->getColore(); ?></h4>
               </li>
               <li>
-                <h4>Taglia: <?php echo $cane->getTaglia(); ?> kg</h4>
+                <h4>Taglia: <?php echo $cane->getTaglia(); ?></h4>
               </li>
               <li>
-                <h4>Origine: <?php echo $cane->getOrigine(); ?> kg</h4>
+                <h4>Origine: <?php echo $cane->getOrigine(); ?></h4>
               </li>
             </ul>
           </li>
