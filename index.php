@@ -106,34 +106,41 @@ $listaCani = [$bolognese, $bracco_italiano, $corso, $pastore_bergamasco, $pastor
 </head>
 
 <body>
-  <h1>Cani Italiani</h1>
-  <?php foreach ($listaCani as $cane) { ?>
-    <ul>
-      <li>
-        <h2><?php echo $cane->getRazza(); ?></h2>
+  <h1 style="text-align: center;">Cani Italiani</h1>
+  <div style="display: flex; flex-wrap: wrap; margin:0 auto; width: 80%;">
+    <?php foreach ($listaCani as $cane) { ?>
+      <div style="width: 50%;">
         <ul>
           <li>
-            <h4>Peso medio: <?php echo $cane->getPesoMedio(); ?> kg</h4>
-          </li>
-          <li>
-            <h4>Altezza media: <?php echo $cane->getAltezzaMedia(); ?> cm</h4>
-          </li>
-          <li>
-            <h4>Pelo: <?php echo $cane->getPesoMedio(); ?> kg</h4>
-          </li>
-          <li>
-            <h4>Colore: <?php echo $cane->getColore(); ?> kg</h4>
-          </li>
-          <li>
-            <h4>Taglia: <?php echo $cane->getTaglia(); ?> kg</h4>
-          </li>
-          <li>
-            <h4>Origine: <?php echo $cane->getOrigine(); ?> kg</h4>
+            <h2><?php echo $cane->getRazza(); ?></h2>
+            <ul>
+              <li>
+                <h4>Peso medio: <?php echo $cane->getPesoMedio(); ?> kg</h4>
+              </li>
+              <li>
+                <h4>Altezza media: <?php echo $cane->getAltezzaMedia(); ?> cm</h4>
+              </li>
+              <li>
+                <h4>Pelo: <?php echo $cane->getPesoMedio(); ?> kg</h4>
+              </li>
+              <li>
+                <h4>Colore: <?php echo $cane->getColore(); ?> kg</h4>
+              </li>
+              <li>
+                <h4>Taglia: <?php echo $cane->getTaglia(); ?> kg</h4>
+              </li>
+              <li>
+                <h4>Origine: <?php echo $cane->getOrigine(); ?> kg</h4>
+              </li>
+            </ul>
           </li>
         </ul>
-      </li>
-    </ul>
-  <?php } ?>
+      </div>
+      <div style="width: 50%; display: flex; justify-content: center;">
+        <img style="height: 300px; padding: 50px 0" src="<?php echo $cane->getImg(); ?>" alt="">
+      </div>
+    <?php } ?>
+  </div>
 </body>
 
 </html>
